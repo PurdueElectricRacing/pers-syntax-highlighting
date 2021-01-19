@@ -1,6 +1,6 @@
 # pers README
 
-You can find the language specifications on [Confluence]: http://confluence.purdueelectricracing.com
+You can find the language specifications on [Confluence]( http://confluence.purdueelectricracing.com)
 
 ## Features
 
