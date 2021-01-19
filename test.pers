@@ -1,0 +1,37 @@
+# globals section
+GLOBAL = 69;
+
+# end globals section
+
+
+routine "this is a routine test" {
+  set-pin DOUT 3 HIGH;
+  println "yo";
+  print RESULT;
+
+}
+
+
+
+test "hello this is a test script" {
+  Var1 = "toast";
+
+  set-pin DOUT 3 HIGH;
+  delay 45;
+  read-pin DIN 4 ;  // read-x would store return result in some static variable
+                    // which would then be accessible forever by EXPECT and ASSERT
+
+  VAR = RESULT;    // RESULT will be a reserved keyword for the global static result variable
+
+  expect GT 6;  // 
+  prompt "Yo momma so fat that the tide comes in when she goes to the beach";
+
+  assert GT 6;
+
+  loop 4 {
+    perrintln "OHHHHHH YOU JUST GOT REKT SON";
+    perrint "OHHHHHH YOU JUST GOT REKT SON";
+  }
+}
+
+

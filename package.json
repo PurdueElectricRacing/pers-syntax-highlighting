@@ -1,0 +1,32 @@
+{
+    "name": "pers",
+    "displayName": "PER Scripting Language",
+    "description": "Syntax highlighing for PERS",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "author": {
+        "name": "Chris Fallon"
+    },
+    
+    "contributes": {
+        "languages": [{
+            "id": "pers",
+            "aliases": ["PER Script", "pers", "PERS"],
+            "extensions": [".pers", ".per"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pers",
+            "scopeName": "source.pers",
+            "path": "./syntaxes/pers.tmLanguage.json"
+        }]
+    },
+    "extensionKind": [
+        "ui"
+    ]
+}

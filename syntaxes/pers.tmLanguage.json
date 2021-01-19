@@ -1,0 +1,112 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"foldingStartMarker": "\\{\\s*$",
+	"foldingStopMarker": "^\\s*\\}",
+	"name": "PER Script",
+	"fileTypes": [".pers", ".per"],
+	"patterns": [
+		{"include": "#keywords"},
+		{"include": "#strings"},
+		{"include": "#comments"},
+		{"include": "#functions"},
+		{"include": "#constants"},
+		{"include": "#variables"},
+		{"include": "#illegals"}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pers",
+				"match": "\\b(loop|call|assert|expect|delay|exit)\\b"
+			},
+			{
+				"name":"keyword.operator.pers",
+				"match": "\\b((?i)GT|(?i)LT|(?i)GE|(?i)NE|(?i)LE|(?i)NE|(?i)EQ|and|or)\\b"
+			},
+			{
+				"name":"entity.name.function.pers",
+				"match": "\\b(read\\-pin|set\\-pin|read\\-msg|send\\-msg|prompt|serial\\-tx|serial\\-rx|perrint|perrintln|print|println)\\b"
+			},
+			{
+				"name": "comment.line.pers",
+				"match": ";"
+			},
+			{
+				"name": "punctuation.paren.open.pers",
+				"match": "\\}"
+			},
+			{
+				"name": "punctuation.paren.close.pers",
+				"match": "\\{"
+			}
+		]
+		},
+		"comments": {
+			"patterns":[
+			{
+				"name": "comment.line.number-sign.pers",
+				"match": "#.*$"
+			},
+			{
+				"name": "comment.line.double-slash.pers",
+				"match": "//.*$"
+			}
+		]},
+		"functions": {
+			"patterns":[
+			{
+				"name": "entity.name.type.pers",
+				"match": "\\b(routine|test)\\b"
+			}
+		]},
+		"constants": {
+			"patterns":[
+			{
+				"name":"constant.language.pers",
+				"match": "\\b(HIGH|LOW)\\b"
+			},
+			{
+				"name": "constant.numeric.pers",
+				"match": "\\b([0-9]+|0[xX]([0-9])+)\\b"
+			},
+			{
+				"name": "storage.modifier.pers",
+				"match": "\\b(DIN|DOUT|AIN|AOUT)\\b"
+			}
+		]},
+		"variables": {
+			"patterns":[
+			{
+				"name": "keyword.other.pers",
+				"match": "\\b(SERIAL_LOG_FILE|RETVAL|LOG_FILE|VERBOSE|SERIAL_DEVICE|GPIO_DEVICE)\\b"
+			},
+			{
+				"name": "variable.parameter.pers",
+				"match": "\\b([a-zA-Z_][0-9a-zA-Z_]*)\\b"
+			}
+		]},
+		"illegals": {
+			"patterns": [
+			{
+				"name":"invalid.illegal.string.pers",
+				"match": "\"[^\"]+$"
+			},
+			{
+				"name":"invalid.illegal.canmsg.pers",
+				"match": "\\b(\\|^[0-9]^[0-9]?)\\b"
+			}
+		]},
+		"strings": {
+			"name": "string.quoted.double.pers",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pers",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.pers"
+}
