@@ -1,36 +1,26 @@
 # pers README
 
-This is the README for your extension "pers". After writing up a brief description, we recommend including the following sections.
+You can find the language specifications on [Confluence]: http://confluence.purdueelectricracing.com
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Provides rudimentary syntax highlighting for the Purdue Electric Racing Scripting language in Visual Studio Code.
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## Installation
+Locate where your system installs vscode extensions (e.g. `~/.vscode/extensions`).
+Assuming your `extensions` directory is in  `~/.vscode/extensions`, perform the following commands.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+`cd <path to your .vscode>/extensions`
+`git clone https://github.com/PurdueElectricRacing/pers-syntax-highlighting.git`
+
+Congratulations, you have now installed the syntax highlighter. Enjoy.
 
 
 ## Known Issues
 None yet
 
-## Release Notes
+## Prerequisites
+Git
+Visual Studio Code
 
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
