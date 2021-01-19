@@ -5,7 +5,7 @@ You can find the language specifications on [Confluence]( http://confluence.purd
 ## Features
 
 Provides rudimentary syntax highlighting for the Purdue Electric Racing Scripting language in Visual Studio Code.
-![Demo](Screenshot_20210119_164949.png)
+![Demo](demo.png)
 
 ## Installation
 Locate where your system installs vscode extensions (e.g. `~/.vscode/extensions`).
