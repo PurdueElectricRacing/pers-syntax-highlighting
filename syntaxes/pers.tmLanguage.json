@@ -98,8 +98,8 @@
 		]},
 		"strings": {
 			"name": "string.quoted.double.pers",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "\"|'",
+			"end": "\"|'",
 			"patterns": [
 				{
 					"name": "constant.character.escape.pers",
