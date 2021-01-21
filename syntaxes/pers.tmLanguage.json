@@ -21,7 +21,7 @@
 			},
 			{
 				"name":"keyword.operator.pers",
-				"match": "\\b((?i)GT|(?i)LT|(?i)GE|(?i)NE|(?i)LE|(?i)NE|(?i)EQ|and|or)\\b"
+				"match": "\\b((?i)GT|(?i)LT|(?i)GE|(?i)NE|(?i)LE|(?i)NE|(?i)EQ|and|or|forever)\\b"
 			},
 			{
 				"name":"entity.name.function.pers",
