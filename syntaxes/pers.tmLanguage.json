@@ -5,9 +5,9 @@
 	"name": "PER Script",
 	"fileTypes": [".pers", ".per"],
 	"patterns": [
+		{"include": "#comments"},
 		{"include": "#keywords"},
 		{"include": "#strings"},
-		{"include": "#comments"},
 		{"include": "#functions"},
 		{"include": "#constants"},
 		{"include": "#variables"},
@@ -17,11 +17,19 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.pers",
-				"match": "\\b(loop|call|assert|expect|delay|exit)\\b"
+				"match": "\\b(loop|call|assert|expect|delay|exit|if|else)\\b"
+			},
+			{
+				"name":"keyword.control.pers",
+				"match": "==|\\!=|<|>|>=|<="
 			},
 			{
 				"name":"keyword.operator.pers",
 				"match": "\\b((?i)GT|(?i)LT|(?i)GE|(?i)NE|(?i)LE|(?i)NE|(?i)EQ|and|or|forever)\\b"
+			},
+			{
+				"name":"keyword.operator.pers",
+				"match": "\\+|&&|\\|\\||\\.|\\/|\\*|\\-|="
 			},
 			{
 				"name":"entity.name.function.pers",
@@ -33,11 +41,11 @@
 			},
 			{
 				"name": "punctuation.paren.open.pers",
-				"match": "\\}"
+				"match": "\\}|\\)|\\]"
 			},
 			{
 				"name": "punctuation.paren.close.pers",
-				"match": "\\{"
+				"match": "\\{|\\(|\\["
 			}
 		]
 		},
