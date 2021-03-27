@@ -33,7 +33,7 @@
 			},
 			{
 				"name":"entity.name.function.pers",
-				"match": "\\b(read\\-pin|set\\-pin|read\\-msg|send\\-msg|prompt|serial\\-tx|serial\\-rx|perrint|perrintln|print|println)\\b"
+				"match": "\\b(read\\-pin|set\\-pin|read\\-msg|send\\-msg|prompt|serial\\-tx|serial\\-rx|set\\-timeout|perrint|perrintln|print|println)\\b"
 			},
 			{
 				"name": "comment.line.pers",
@@ -86,7 +86,7 @@
 			"patterns":[
 			{
 				"name": "keyword.other.pers",
-				"match": "\\b(SERIAL_LOG_FILE|RETVAL|LOG_FILE|VERBOSE|SERIAL_DEVICE|GPIO_DEVICE)\\b"
+				"match": "\\b(RETVAL|ELAPSED_MS)\\b"
 			},
 			{
 				"name": "variable.parameter.pers",
