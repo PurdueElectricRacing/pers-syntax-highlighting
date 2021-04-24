@@ -75,7 +75,7 @@
 			},
 			{
 				"name": "constant.numeric.pers",
-				"match": "\\b((0[xX]([0-9AaBbCcDdEeFf])+)|([0-9AaBbCcDdEeFf][0-9AaBbCcDdEeFf]?)(\\|[0-9AaBbCcDdEeFf][0-9AaBbCcDdEeFf]?){0,7}|([0-9]+))\\b"
+				"match": "\\b((0[xX]([0-9AaBbCcDdEeFf])+)|([0-9AaBbCcDdEeFf][0-9AaBbCcDdEeFf]?)(\\|[0-9AaBbCcDdEeFf][0-9AaBbCcDdEeFf]?)*|([0-9]+))\\b"
 			},
 			{
 				"name": "storage.modifier.pers",
